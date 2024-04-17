@@ -1,0 +1,66 @@
+﻿@model WebApplicationExamen.Models.FacturaDetalle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FacturaDetalle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Factura.FacturaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factura.FacturaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Servicio.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Servicio.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ISV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ISV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalLinea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalLinea)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FacturaDetalleId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
